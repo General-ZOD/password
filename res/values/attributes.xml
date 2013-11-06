@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="text_label">
+       <item name="android:layout_width">wrap_content</item> 
+       <item name="android:layout_height">wrap_content</item>        
+        <item name="android:height">40dp</item>
+        <item name="android:width">110dp</item>
+        <item name="android:textColor">#66cc99</item>
+         <item name="android:padding">5dp</item>
+        <item name="android:typeface">monospace</item>
+         <item name="android:textSize">20sp</item>
+         <item name="android:textStyle">bold</item>
+    </style>
+    <style name="list_label">
+       <item name="android:layout_width">wrap_content</item> 
+       <item name="android:layout_height">wrap_content</item>        
+        <item name="android:height">50dp</item>
+        <item name="android:width">150dp</item>
+        <item name="android:textColor">#66cc99</item>
+         <item name="android:padding">5dp</item>
+        <item name="android:typeface">monospace</item>
+         <item name="android:textSize">20sp</item>
+         <item name="android:textStyle">bold</item>
+    </style>    
+    <style name="error_label">
+       <item name="android:layout_width">fill_parent</item> 
+       <item name="android:layout_height">fill_parent</item>        
+        <item name="android:height">40dp</item>
+         <item name="android:gravity">center</item>
+        <item name="android:textColor">#66cc99</item>
+         <item name="android:padding">5dp</item>
+        <item name="android:typeface">monospace</item>
+         <item name="android:textSize">20sp</item>
+         <item name="android:textStyle">bold</item>
+    </style>    
+    <style name="text">
+       <item name="android:layout_width">wrap_content</item> 
+       <item name="android:layout_height">wrap_content</item>        
+        <item name="android:height">40dp</item>
+        <item name="android:width">250dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#66cc99</item>
+        <item name="android:typeface">monospace</item>
+         <item name="android:textSize">18sp</item>      
+    </style>    
+    <style name="btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:width">70dp</item>
+        <item name="android:height">20dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">monospace</item>
+         <item name="android:textSize">15sp</item>
+    </style>      
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fillViewport="true"
+                   style="@style/background">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/each_record_layout"
+        style="@style/vertical_linear_layout">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/inner_linear_layout">
+                <TextView  
+                    style="@style/each_record_label" android:text="WEBSITE"  />
+                <TextView  android:id="@+id/text_each_app"
+                     style="@style/each_record_text" />                
+                <EditText  android:id="@+id/each_app"
+                    style="@style/each_record_edit"  android:visibility="gone" />                    
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/inner_linear_layout">
+                <TextView  
+                    style="@style/each_record_label"  android:text="URL" />
+                <TextView  android:id="@+id/text_each_url"  
+                    style="@style/each_record_text" android:textColor="#2eacff" />                
+                <EditText  android:id="@+id/each_url"
+                    style="@style/each_record_edit"  android:inputType="textEmailAddress" android:visibility="gone"  />                    
+            </LinearLayout>        
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/inner_linear_layout">
+                <TextView  
+                    style="@style/each_record_label"  android:text="USERNAME" />
+                <TextView  android:id="@+id/text_each_email" 
+                     style="@style/each_record_text" />       
+                <EditText  android:id="@+id/each_email"
+                    style="@style/each_record_edit" android:inputType="textEmailAddress" android:visibility="gone" />                    
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/inner_linear_layout">
+                <TextView  
+                    style="@style/each_record_label"  android:text="PASSWORD" />
+                <TextView  android:id="@+id/text_each_password"  
+                   style="@style/each_record_text" />                
+                <EditText  android:id="@+id/each_password"
+                    style="@style/each_record_edit" android:visibility="gone"  />                    
+            </LinearLayout>        
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/inner_linear_layout">
+                <TextView  
+                    style="@style/each_record_label"  android:text="DATE" />
+                <TextView   android:id="@+id/each_date" 
+                    style="@style/each_record_text" />                   
+            </LinearLayout>        
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    style="@style/inner_linear_layout">
+                    <Button android:id="@+id/each_record_edit_btn"
+                        android:layout_marginRight="4dp" style="@style/login_btn" android:background="@drawable/the_buttons" android:text="EDIT"  />
+                    <Button android:id="@+id/each_record_update_btn"
+                        style="@style/login_btn" android:background="@drawable/the_buttons" android:text="UPDATE" 
+                       android:layout_marginLeft="4dp" android:visibility="gone" />
+                    <Button android:id="@+id/each_record_delete_btn"
+                        android:layout_marginRight="4dp" style="@style/login_btn" android:background="@drawable/the_buttons" android:text="DELETE"  />
+                    <Button android:id="@+id/each_record_cancel_btn"
+                        android:layout_marginLeft="4dp" style="@style/login_btn" android:background="@drawable/the_buttons" android:text="CANCEL"
+                        android:visibility="gone" />                    
+            </LinearLayout>
+    </LinearLayout>                       
+</ScrollView>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Vault</string>
+    <string name="login_activity">Login</string>
+    <string name="logout_message">Don\'t forget to always log out</string>
+    <string name="setup_message">By clicking the button, you have agreed to abide by our terms of condition and privacy policies.</string>
+    <string name="upload_img_msg">To personalize your profile, click on the image icon to upload your picture.</string>
+    <string name="tos">Click to read our Terms of Service and Privacy Policy</string>
+</resources>

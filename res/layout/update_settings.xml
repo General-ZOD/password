@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fillViewport="true"
+                   style="@style/background" android:gravity="center_horizontal">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/update_layout"
+       style="@style/vertical_linear_layout">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">
+                    <ImageView android:id="@+id/update_user_image"
+                       style="@style/user_image_style" android:src="@drawable/human_profile"
+                    />
+            </LinearLayout>            
+        <TextView
+             style="@style/login_text_label" android:text="Email Address" />
+        <EditText  android:id="@+id/update_email"
+            style="@style/login_edit" android:inputType="textEmailAddress" android:hint="Email"  />    
+        <TextView  
+             style="@style/login_text_label" android:text="Nickname" />
+        <EditText android:id="@+id/update_nick"
+            style="@style/login_edit" android:inputType="text" android:hint="You will be addressed by this name"  />
+        <TextView  
+             style="@style/login_text_label" android:text="Password" />
+        <EditText  android:id="@+id/update_pass"
+            style="@style/login_edit" android:inputType="textPassword" android:hint="Password"  />    
+        <TextView  
+             style="@style/login_text_label" android:text="Confirm Password" />
+        <EditText android:id="@+id/update_confirm_pass"
+            style="@style/login_edit" android:inputType="textPassword" android:hint="Password"  />        
+        <Button android:id="@+id/update_btn"
+            style="@style/login_btn" android:background="@drawable/the_buttons" android:text="Update"  /> 
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/logout_message_container" >                
+                    <TextView 
+                          style="@style/logout_message" android:text="@string/logout_message" />
+         </LinearLayout>             
+    </LinearLayout>        
+</ScrollView>
+
+

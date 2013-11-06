@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fillViewport="true"
+                   style="@style/background">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/home_layout"
+        style="@style/vertical_linear_layout">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">
+            <ImageView android:id="@+id/user_image"
+                 style="@style/user_image_style" android:src="@drawable/human_profile"
+            />
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/home_linear_layout">
+                  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/home_left_view">                  
+                           <ImageView android:id="@+id/add_record_link" android:src="@drawable/add_link"
+                                 style="@style/home_view_image"   />
+                            <TextView 
+                                 style="@style/home_view_text" android:text="Add Record" />
+                </LinearLayout>
+                  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/home_right_view">                  
+                           <ImageView android:id="@+id/view_record_link" android:src="@drawable/view_link"
+                                  style="@style/home_view_image"  />
+                            <TextView
+                                style="@style/home_view_text" android:text="View Record" />
+                </LinearLayout>                
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/home_linear_layout">
+                  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      style="@style/home_left_view">                  
+                           <ImageView android:id="@+id/update_settings_link" android:src="@drawable/settings_link"
+                                  style="@style/home_view_image"  />
+                            <TextView 
+                                 style="@style/home_view_text" android:text=" Settings  " />
+                </LinearLayout>
+                  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/home_right_view">                  
+                           <ImageView android:id="@+id/help_link" android:src="@drawable/info_link"
+                                  style="@style/home_view_image" />
+                            <TextView
+                                 style="@style/home_view_text"  android:text="   Info    " />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/home_linear_layout">
+                  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"
+                     android:gravity="center_horizontal">                  
+                           <ImageView android:id="@+id/logout_link" android:src="@drawable/logout_link"
+                                  style="@style/home_view_image" />
+                            <TextView
+                                 style="@style/home_view_text"  android:text="LogOut" />
+                </LinearLayout>
+            </LinearLayout>  
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     style="@style/logout_message_container" >                
+                    <TextView 
+                          style="@style/logout_message" android:text="@string/logout_message" />
+            </LinearLayout>             
+    </LinearLayout>                       
+</ScrollView>

@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:20
+-keep class com.password.futureteknologies.EachRecord { <init>(...); }
+
+# view AndroidManifest.xml #generated:12
+-keep class com.password.futureteknologies.Home { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.password.futureteknologies.Information { <init>(...); }
+
+# view AndroidManifest.xml #generated:10
+-keep class com.password.futureteknologies.Login { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.password.futureteknologies.Record { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class com.password.futureteknologies.Setup { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.password.futureteknologies.UpdateSettings { <init>(...); }
+

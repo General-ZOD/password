@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fillViewport="true"
+                   style="@style/background">
+        <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/record_layout"  android:layout_width="fill_parent"  android:layout_height="fill_parent">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"  android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TabWidget 
+                    android:id="@android:id/tabs"   android:layout_width="fill_parent"  android:layout_height="wrap_content" />  
+                <FrameLayout
+                    android:id="@android:id/tabcontent"  android:layout_width="fill_parent"  android:layout_height="fill_parent">
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/add_data_layout" android:orientation="vertical"  style="@style/vertical_linear_layout"
+                                    android:gravity="center_vertical">                     
+                                <TextView
+                                        style="@style/login_text_label" android:text="Website" />
+                                <EditText android:id="@+id/app_name"   
+                                        style="@style/login_edit" android:singleLine="true"  android:inputType="text" android:hint="Name of website" />    
+                                <TextView
+                                        style="@style/login_text_label"  android:text="Website URL" />
+                                <EditText android:id="@+id/app_url"   
+                                        style="@style/login_edit" android:singleLine="true"  android:inputType="text" android:hint="Website's URL" />     
+                                <TextView
+                                        style="@style/login_text_label"  android:text="Username" />
+                                <EditText android:id="@+id/app_username"   
+                                        style="@style/login_edit" android:singleLine="true"  android:inputType="textEmailAddress"
+                                        android:hint="Login username or email" />         
+                                <TextView
+                                       style="@style/login_text_label"  android:text="Password" />
+                                <EditText android:id="@+id/app_password"   
+                                       style="@style/login_edit" android:singleLine="true" android:hint="Login password" /> 
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:orientation="horizontal"  android:layout_width="fill_parent" android:gravity="center" 
+                                    android:layout_height="wrap_content" android:paddingTop="15dp">                                        
+                                        <Button android:id="@+id/btn_add_record" 
+                                                style="@style/login_btn" android:background="@drawable/the_buttons" android:layout_marginRight="4dp"
+                                                android:text="Add"
+                                                />
+                                        <Button android:id="@+id/btn_add_done" 
+                                                style="@style/login_btn" android:background="@drawable/the_buttons" android:layout_marginLeft="4dp" 
+                                                android:text="View"
+                                                />
+                               </LinearLayout> 
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        style="@style/logout_message_container" >                
+                                        <TextView 
+                                            style="@style/logout_message" android:text="@string/logout_message" />
+                                </LinearLayout>                               
+                        </LinearLayout> 
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/view_data_layout" android:orientation="vertical"  android:layout_width="fill_parent" 
+                            android:layout_height="wrap_content"> 
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:id="@+id/search_layout" 
+                                    android:orientation="horizontal"  android:layout_width="fill_parent" android:layout_height="wrap_content" 
+                                    android:visibility="gone" android:weightSum="1" android:gravity="center_vertical"> 
+                                        <EditText android:id="@+id/txt_search_record"   
+                                            android:layout_width="0dp" android:layout_weight="0.6"  android:layout_height="fill_parent"  
+                                            android:hint="Enter a word"  android:height="50dp" android:singleLine="true" />                         
+                                        <Button android:id="@+id/btn_search_record"
+                                                android:layout_width="0dp" android:layout_weight="0.2" android:layout_height="wrap_content"
+                                                android:minHeight="40dp" android:minWidth="100dp" android:textSize="20sp"
+                                                android:background="@drawable/the_buttons" android:text="Search" 
+                                                /> 
+                                        <Button android:id="@+id/btn_refresh"
+                                                android:layout_width="0dp" android:layout_weight="0.2" android:layout_height="wrap_content"
+                                                android:minHeight="40dp" android:minWidth="100dp" android:textSize="20sp"
+                                                android:background="@drawable/the_buttons" android:text="Refresh" 
+                                                />                                                 
+                                </LinearLayout>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:id="@+id/sort_layout" 
+                                    android:orientation="horizontal"  android:layout_width="fill_parent" android:layout_height="wrap_content" 
+                                    android:visibility="gone" android:weightSum="1">
+                                        <Spinner android:id="@+id/spinner_record"   
+                                            android:layout_width="0dp"  android:layout_height="fill_parent" android:height="30dp" android:layout_weight="0.6" /> 
+                                        <CheckBox android:id="@+id/sort_direction" 
+                                              android:layout_width="0dp" android:layout_height="fill_parent" android:height="30dp" android:layout_weight="0.4" 
+                                              android:text="Down" android:textColor="#000000" />                                            
+                                </LinearLayout>                                
+                                <TextView android:id="@+id/txt_empty"
+                                        style="@style/no_data" android:visibility="gone" />
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:id="@+id/record_header_layout" 
+                                    android:orientation="horizontal"  android:layout_width="fill_parent" android:layout_height="wrap_content" 
+                                    android:visibility="gone" android:weightSum="1">
+                                    <TextView android:id="@+id/list_app" 
+                                        style="@style/record_list_header" android:gravity="center_vertical" android:text="Website" 
+                                        android:background="@drawable/left_header" />
+                                    <TextView android:id="@+id/list_username" 
+                                        style="@style/record_list_header" android:gravity="center_vertical" android:text="Username" 
+                                        android:background="@drawable/right_header" />                                        
+                                </LinearLayout>                                
+                            <ListView android:id="@+id/name_list" 
+                                android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#771b1b" 
+                                android:dividerHeight="2sp">
+                            </ListView>
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    style="@style/logout_message_container" >                
+                                    <TextView 
+                                        style="@style/logout_message" android:text="@string/logout_message" />
+                            </LinearLayout>                            
+                        </LinearLayout>                             
+                    </FrameLayout>             
+            </LinearLayout>        
+        </TabHost>                       
+</ScrollView>
+

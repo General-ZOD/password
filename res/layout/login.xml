@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fillViewport="true"
+                   style="@style/background">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/login_layout"
+            style="@style/vertical_linear_layout">    
+            <TextView  
+                 style="@style/login_text_label" android:text="Email Address" />
+            <EditText  android:id="@+id/login_email"
+                style="@style/login_edit" android:inputType="textEmailAddress" android:hint="Email"  />
+            <TextView  
+                 style="@style/login_barrier" android:visibility="invisible" android:text="Password" />                
+            <TextView  
+                 style="@style/login_text_label" android:text="Password" />
+            <EditText android:id="@+id/login_pass"
+                style="@style/login_edit" android:inputType="textPassword" android:hint="Password"   />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/login_layout"
+                style="@style/home_linear_layout">                 
+                  <Button android:id="@+id/login_btn"
+                         style="@style/login_btn" android:background="@drawable/the_buttons" android:text="Login"  />  
+            </LinearLayout>
+        </LinearLayout>                       
+</ScrollView>
+
+

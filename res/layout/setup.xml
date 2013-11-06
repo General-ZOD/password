@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fillViewport="true"
+                   style="@style/background">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/setup_layout"
+            style="@style/vertical_linear_layout">
+            <TextView  
+                 style="@style/image_upload_msg" android:text="@string/upload_img_msg" />                
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">
+                    <ImageView android:id="@+id/setup_user_image"
+                        style="@style/user_image_style" android:src="@drawable/human_profile"
+                    />
+            </LinearLayout>
+            <TextView  
+                 style="@style/setup_text_label" android:text="Email Address" />
+            <EditText  android:id="@+id/setup_email"
+                style="@style/setup_text_edit"  android:inputType="textEmailAddress" android:hint="Email"  />    
+            <TextView  
+                 style="@style/setup_text_label" android:text="Nickname" />
+            <EditText android:id="@+id/setup_nick"
+                 style="@style/setup_text_edit" android:hint=""  />
+            <TextView  
+                 style="@style/setup_text_label" android:text="Password" />
+            <EditText  android:id="@+id/setup_pass"
+                 style="@style/setup_text_edit"  android:inputType="textPassword" android:hint="Password"  />    
+            <TextView  
+                 style="@style/setup_text_label" android:text="Confirm Password" />
+            <EditText android:id="@+id/setup_confirm_pass"
+                 style="@style/setup_text_edit" android:inputType="textPassword" android:hint="Password"  />
+            <TextView android:id="@+id/tos_link"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15sp"
+                            android:textColor="#1a77b8" android:textStyle="bold" android:paddingTop="20dp"  android:paddingBottom="20dp"
+                            android:text="@string/tos" android:gravity="center" />                 
+            <TextView
+                            android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+                            android:textColor="#771b1b" android:textStyle="bold|italic" android:paddingTop="10dp"  android:paddingBottom="10dp"
+                            android:text="@string/setup_message" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/login_layout"
+                style="@style/home_linear_layout">
+                    <Button android:id="@+id/setup_btn"
+                        style="@style/login_btn" android:background="@drawable/the_buttons" android:text="Setup"  />                    
+            </LinearLayout>   
+        </LinearLayout>                       
+</ScrollView>
+

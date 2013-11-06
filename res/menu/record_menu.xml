@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sort_records" 
+                android:title="Sort" android:icon="@drawable/view">         
+    </item>
+    <item android:id="@+id/search_records" 
+                android:title="Search" android:icon="@drawable/view">         
+    </item>  
+     <item android:id="@+id/home_link" 
+                android:title="Home" android:icon="@drawable/home">         
+    </item> 
+     <item android:id="@+id/log_out" 
+                android:title="Log Out" android:icon="@drawable/logout">         
+    </item>     
+</menu>
